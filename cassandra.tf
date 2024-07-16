@@ -1,4 +1,4 @@
 module "cassandra" {
   source  = "./modules/helm_cassandra"
-  version = "10.0.0"
+  version = "9.7.5"
 }
