@@ -5,7 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "terraform"
+    directory: "/"
     schedule:
       interval: "daily"
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "chore(deps): "
+      include: "scope"
