@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cassandra
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/helm/charts.git
+    targetRevision: 4.0.1
+    path: stable/cassandra
+    helm:
+      valueFiles:
+      - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: cassandra
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
+  revisionHistoryLimit: 3
+  chart:
+    version: 4.0.1
