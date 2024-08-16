@@ -6,12 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/helm/charts.git
+    repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 4.0.1
-    path: stable/cassandra
-    helm:
-      valueFiles:
-      - values.yaml
+    chart: cassandra
   destination:
     server: https://kubernetes.default.svc
     namespace: cassandra
@@ -22,5 +19,3 @@ spec:
     syncOptions:
     - CreateNamespace=true
   revisionHistoryLimit: 3
-  chart:
-    version: 4.0.1
