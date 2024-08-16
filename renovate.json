@@ -7,7 +7,7 @@
     "enabled": true,
     "fileMatch": ["\\.yaml$"]
   },
-    "packageRules": [
+  "packageRules": [
     {
       "matchFiles": ["**/*.tf"],
       "packageNames": ["hashicorp/terraform"],
