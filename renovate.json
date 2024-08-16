@@ -14,7 +14,7 @@
       "automerge": false,
       "separateMajorMinor": true,
       "separateMinorPatch": true,
-
+      "prTitlePattern": "chore(terraform): Update {{parentDir}}: {{depName}} from {{currentValue}} to {{newValue}}",
     },
     {
       "matchPaths": ["environments/test2/**"],
@@ -22,7 +22,7 @@
       "automerge": false,
       "separateMajorMinor": true,
       "separateMinorPatch": true,
-
+      "prTitlePattern": "chore(terraform): Update {{parentDir}}: {{depName}} from {{currentValue}} to {{newValue}}",
     }
   ]
 }
