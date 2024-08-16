@@ -3,4 +3,8 @@
   "extends": [
     "config:recommended"
   ]
+    {
+  "argocd": {
+    "fileMatch": ["\\.yaml$"]
+  }
 }
