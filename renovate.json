@@ -5,6 +5,7 @@
   ]
     {
   "argocd": {
+    "enabled": true
     "fileMatch": ["\\.yaml$"]
   }
 }
