@@ -16,9 +16,9 @@
       "groupName": "Terraform dependencies",
       "groupSlug": "terraform",
       "fileMatch": [
-        "^test1/.*\\.tf$",
-        "^test2/.*\\.tf$",
-        "^test3/.*\\.tf$"
+        "^environments/test1/.*\\.tf$",
+        "^environments/test2/.*\\.tf$",
+        "^environments/test3/.*\\.tf$"
       ]
     }
   ]
