@@ -4,7 +4,21 @@
     "config:recommended"
   ],
   "argocd": {
-    "enabled": true
+    "enabled": true,
     "fileMatch": ["\\.yaml$"]
-  }
+  },
+    "packageRules": [
+    {
+      "matchFiles": ["**/*.tf"],
+      "packageNames": ["hashicorp/terraform"],
+      "separateMajorMinor": true,
+      "separateMinorPatch": true,
+      "groupName": "Terraform dependencies",
+      "groupSlug": "terraform",
+      "fileMatch": [
+        "^directory1/.*\\.tf$",
+        "^directory2/.*\\.tf$",
+        "^directory3/.*\\.tf$"
+      ]
+    }
 }
