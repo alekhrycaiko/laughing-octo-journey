@@ -9,17 +9,20 @@
   },
   "packageRules": [
     {
-      "matchFiles": ["**/*.tf"],
-      "packageNames": ["hashicorp/terraform"],
+      "matchPaths": ["environments/test1/**"],
+      "groupName": "Terraform: environments/test1",
+      "automerge": false,
       "separateMajorMinor": true,
       "separateMinorPatch": true,
-      "groupName": "Terraform dependencies",
-      "groupSlug": "terraform",
-      "fileMatch": [
-        "^environments/test1/.*\\.tf$",
-        "^environments/test2/.*\\.tf$",
-        "^environments/test3/.*\\.tf$"
-      ]
+
+    },
+    {
+      "matchPaths": ["environments/test2/**"],
+      "groupName": "Terraform: environments/test2",
+      "automerge": false,
+      "separateMajorMinor": true,
+      "separateMinorPatch": true,
+
     }
   ]
 }
