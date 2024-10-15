@@ -2,7 +2,7 @@ resource "helm_release" "example" {
   name       = "my-redis-release"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "redis"
-  version    = "6.0.0"
+  version    = "20.2.1"
 
   values = [
   ]
